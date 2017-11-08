@@ -1,0 +1,8 @@
+Debian
+======
+
+*We recommend using Conda environments!*
+
+On Debian, Ubuntu, etc. you can install `.deb` packages at a system level.
+
+These packages are available from `http://quinclas.com/dist/{stable|unstable}/debian`.

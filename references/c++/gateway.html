@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Gateway &mdash; Quinclas 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Quinclas 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="C++" href="../c++.html"/>
+        <link rel="next" title="Strategy" href="strategy.html"/>
+        <link rel="prev" title="Requests" href="requests.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Quinclas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gateways.html">Gateways</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../conventions.html">Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../c++.html">C++</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="typedefs.html">Typedefs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs.html">Structs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="requests.html">Requests</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Gateway</a></li>
+<li class="toctree-l2"><a class="reference internal" href="strategy.html">Strategy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../distribution.html">Distribution</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Quinclas</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../c++.html">C++</a> &raquo;</li>
+        
+      <li>Gateway</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/references/c++/gateway.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gateway">
+<h1>Gateway<a class="headerlink" href="#gateway" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common7GatewayE">
+<span id="quinclas::common::Gateway"></span><span class="target" id="classquinclas_1_1common_1_1_gateway"></span><em class="property">class </em><code class="descclassname">quinclas::common::</code><code class="descname">Gateway</code><a class="headerlink" href="#_CPPv2N8quinclas6common7GatewayE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#classquinclas_1_1common_1_1_gateway"><span class="std std-ref">Gateway</span></a> interface. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway4sendERK18CreateOrderRequest">
+<span id="quinclas::common::Gateway::send__CreateOrderRequestCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1aecde33faf98a510f7b1f143fda744122"></span><em class="property">virtual</em> void <code class="descname">send</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="requests.html#_CPPv2N8quinclas6common18CreateOrderRequestE" title="quinclas::common::CreateOrderRequest">CreateOrderRequest</a> &amp;<em>create_order_request</em><span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway4sendERK18CreateOrderRequest" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Send a <a class="reference internal" href="structs.html#structquinclas_1_1common_1_1_create_order"><span class="std std-ref">CreateOrder</span></a> request.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">create_order_request</span></code>: has the order creation request details. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway4sendERK18ModifyOrderRequest">
+<span id="quinclas::common::Gateway::send__ModifyOrderRequestCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1abcd3009cdf53b7b989a362ada7190a04"></span><em class="property">virtual</em> void <code class="descname">send</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="requests.html#_CPPv2N8quinclas6common18ModifyOrderRequestE" title="quinclas::common::ModifyOrderRequest">ModifyOrderRequest</a> &amp;<em>modify_order_request</em><span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway4sendERK18ModifyOrderRequest" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Send a <a class="reference internal" href="structs.html#structquinclas_1_1common_1_1_modify_order"><span class="std std-ref">ModifyOrder</span></a> request.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">modify_order_request</span></code>: has the order modification request details. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway4sendERK18CancelOrderRequest">
+<span id="quinclas::common::Gateway::send__CancelOrderRequestCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1a2649f0e923764d525f255fc396436c08"></span><em class="property">virtual</em> void <code class="descname">send</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="requests.html#_CPPv2N8quinclas6common18CancelOrderRequestE" title="quinclas::common::CancelOrderRequest">CancelOrderRequest</a> &amp;<em>cancel_order_request</em><span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway4sendERK18CancelOrderRequest" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Send a <a class="reference internal" href="structs.html#structquinclas_1_1common_1_1_cancel_order"><span class="std std-ref">CancelOrder</span></a> request.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">cancel_order_request</span></code>: has the order cancellation request details. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common7Gateway7HandlerE">
+<span id="quinclas::common::Gateway::Handler"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler"></span><em class="property">class </em><code class="descname">Handler</code><a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7HandlerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Callback handler interface. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway7Handler2onERK16TerminationEvent">
+<span id="quinclas::common::Gateway::Handler::on__TerminationEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler_1a3c847cb3ce0b7325c0e857bd7af5da98"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common16TerminationEventE" title="quinclas::common::TerminationEvent">TerminationEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7Handler2onERK16TerminationEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#classquinclas_1_1common_1_1_gateway"><span class="std std-ref">Gateway</span></a> has issued a termination (shutdown) event. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway7Handler2onERK18GatewayStatusEvent">
+<span id="quinclas::common::Gateway::Handler::on__GatewayStatusEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler_1aaf30f2e270843d5ec5c67bc022f66f9d"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common18GatewayStatusEventE" title="quinclas::common::GatewayStatusEvent">GatewayStatusEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7Handler2onERK18GatewayStatusEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Connection or login status has changed for a gateway. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway7Handler2onERK18ReferenceDataEvent">
+<span id="quinclas::common::Gateway::Handler::on__ReferenceDataEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler_1a726e766dd96a5305e3f6f7e840748a56"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common18ReferenceDataEventE" title="quinclas::common::ReferenceDataEvent">ReferenceDataEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7Handler2onERK18ReferenceDataEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference data update for an instrument. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway7Handler2onERK17MarketStatusEvent">
+<span id="quinclas::common::Gateway::Handler::on__MarketStatusEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler_1ab6ae95bcaae51e44318f113d539557b5"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common17MarketStatusEventE" title="quinclas::common::MarketStatusEvent">MarketStatusEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7Handler2onERK17MarketStatusEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Market status update for an instrument. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway7Handler2onERK18MarketByPriceEvent">
+<span id="quinclas::common::Gateway::Handler::on__MarketByPriceEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler_1a6e775e981f0fa164d6e35123599222f3"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common18MarketByPriceEventE" title="quinclas::common::MarketByPriceEvent">MarketByPriceEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7Handler2onERK18MarketByPriceEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Market-by-price update for an instrument. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway7Handler2onERK22SessionStatisticsEvent">
+<span id="quinclas::common::Gateway::Handler::on__SessionStatisticsEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler_1a35375a1de4ff963bc44e0c080bc2d711"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common22SessionStatisticsEventE" title="quinclas::common::SessionStatisticsEvent">SessionStatisticsEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7Handler2onERK22SessionStatisticsEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Session statistics update for an instrument. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway7Handler2onERK20DailyStatisticsEvent">
+<span id="quinclas::common::Gateway::Handler::on__DailyStatisticsEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler_1a55dae0fb63bf5e9ea4b9326d3d8283ca"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common20DailyStatisticsEventE" title="quinclas::common::DailyStatisticsEvent">DailyStatisticsEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7Handler2onERK20DailyStatisticsEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Daily statistics update for an instrument. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway7Handler2onERK19CreateOrderAckEvent">
+<span id="quinclas::common::Gateway::Handler::on__CreateOrderAckEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler_1a28b006bebdac59fbc61eb78b369dacd0"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common19CreateOrderAckEventE" title="quinclas::common::CreateOrderAckEvent">CreateOrderAckEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7Handler2onERK19CreateOrderAckEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Response to a create order request. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway7Handler2onERK19ModifyOrderAckEvent">
+<span id="quinclas::common::Gateway::Handler::on__ModifyOrderAckEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler_1a4fb34dc635d1ec7eeb46b2408f3ccd17"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common19ModifyOrderAckEventE" title="quinclas::common::ModifyOrderAckEvent">ModifyOrderAckEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7Handler2onERK19ModifyOrderAckEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Response to a modify order request. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway7Handler2onERK19CancelOrderAckEvent">
+<span id="quinclas::common::Gateway::Handler::on__CancelOrderAckEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler_1aeb43f67bcf7134d9978f3d6966c30d4f"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common19CancelOrderAckEventE" title="quinclas::common::CancelOrderAckEvent">CancelOrderAckEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7Handler2onERK19CancelOrderAckEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Response to a cancel order request. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway7Handler2onERK16OrderUpdateEvent">
+<span id="quinclas::common::Gateway::Handler::on__OrderUpdateEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler_1ad8df0b4f0c942926c18c65c70dbeea33"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common16OrderUpdateEventE" title="quinclas::common::OrderUpdateEvent">OrderUpdateEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7Handler2onERK16OrderUpdateEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>New order, or order details have been updated. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common7Gateway7Handler2onERK16TradeUpdateEvent">
+<span id="quinclas::common::Gateway::Handler::on__TradeUpdateEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_gateway_1_1_handler_1acdbd0ae4e341120211215f835fb75205"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common16TradeUpdateEventE" title="quinclas::common::TradeUpdateEvent">TradeUpdateEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common7Gateway7Handler2onERK16TradeUpdateEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>New trade, or trade details have been updated. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="strategy.html" class="btn btn-neutral float-right" title="Strategy" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="requests.html" class="btn btn-neutral" title="Requests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Hans Erik Thrane.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

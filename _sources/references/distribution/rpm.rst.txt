@@ -1,0 +1,8 @@
+RPM
+====
+
+*We recommend using Conda environments!*
+
+On RHEL, CentOS, Fedora, etc. you can install `.rpm` packages at a system level.
+
+These packages are available from `http://quinclas.com/dist/{stable|unstable}/rpm`.

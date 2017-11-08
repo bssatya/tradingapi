@@ -1,0 +1,70 @@
+Conventions
+===========
+
+C++
+---
+
+Compiler Version
+++++++++++++++++
+Our code must be C++11 compliant.
+
+We aim to be conformant on a number of platforms
+
+    * Linux / GCC
+
+        * Active development.
+
+    * macOS / Clang
+
+        * Active development.
+
+    * Windows / Visual C++
+
+        * *No active development. It may work, but no guarantees given*.
+
+Code Style
+++++++++++
+As a general principle, all our code has to conform to the `Google Style Guide <https://google.github.io/styleguide/cppguide.html>`_.
+
+To ensure compliance, as part of our development process, we check our code using `cpplint <https://github.com/google/styleguide/tree/gh-pages/cpplint>`_.
+We do allow a few exceptions, though
+
+    * :literal:`filter=-runtime/references`
+
+        * We prefer passing references to pointers, e.g. :code:`foo(const Bar &)` is preferred to :code:`foo(const Bar *)`.
+        * The reason is that we don't want run--time checks for :code:`nullptr`.
+
+    * :literal:`filter=-build/c++11`
+
+        * Google disallows the use of e.g. :code:`#include <thread>` and :code:`#include <chrono>`.
+        * We prefer to adopt these new features.
+
+Testing
++++++++
+We use `googletest <https://github.com/google/googletest>`_ as the test runner for all our test cases.
+
+Command--Line Flags
++++++++++++++++++++
+We use `gflags <https://github.com/gflags/gflags>`_ to parse command--line arguments.
+
+Logging
++++++++
+We use `glog <https://github.com/google/glog>`_ for all logging.
+Except for some thirparty dependencies, we will never write directly to `stdout` or `stderr`.
+The idea is that you should be able to configure your desired logging style from your environment.
+
+Our own preferences are
+
+.. code-block:: bash
+
+    export GLOG_logtostderr=1
+    export GLOG_minloglevel=0
+
+
+Documentation
+-------------
+We use `Sphinx <http://www.sphinx-doc.org/>`_ and `Read the Docs <https://readthedocs.org/>`_ to generate our documentation.
+
+C++
++++
+We use `Doxygen <http://www.stack.nl/~dimitri/doxygen/>`_ and `Breathe <https://github.com/michaeljones/breathe>`_ to automatically parse and prepare C++ code documentation.

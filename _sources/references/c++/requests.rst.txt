@@ -1,0 +1,11 @@
+Requests
+========
+
+.. doxygenstruct:: quinclas::common::CreateOrderRequest
+    :members:
+
+.. doxygenstruct:: quinclas::common::ModifyOrderRequest
+    :members:
+
+.. doxygenstruct:: quinclas::common::CancelOrderRequest
+    :members:

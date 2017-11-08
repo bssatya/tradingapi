@@ -1,0 +1,4 @@
+Typedefs
+========
+
+.. doxygentypedef:: quinclas::common::datetime_t

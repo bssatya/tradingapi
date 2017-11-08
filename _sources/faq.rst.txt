@@ -1,0 +1,82 @@
+FAQ
+===
+
+
+Business Model
+--------------
+
+Why do you open--source?
+++++++++++++++++++++++++
+It should be a win--win for everybody.
+The more who use the API's and tools, the more beneficial it becomes to share the
+efforts for the more standard work, e.g. market gateways.
+
+As we state elsewhere, our intention is to make a business out of offering standardised and
+high--quality solutions where it otherwise makes no sense for each client to do this work by themselves.
+This should be cost-effective for everyone involved.
+
+By not forcing you into using closed--source solutions, you're also free to do whatever you like.
+Over time we expect community contributed tools and utilities for eveyone to use.
+
+What partners do you have?
+++++++++++++++++++++++++++
+Two smaller funds, both in what could be considered a start--up phase
+
+    * A high-frequency fund focusing on intra--day opportunities.
+    * A macro fund automating their execution.
+
+These partners allows us to standardise our solutions because they access different markets and
+have different needs when it comes to execution and protection.
+
+We help these partners develop the solutions they need and by offering them a business model
+where they don't have to assume fixed costs for hiring resouces to develop such solutions.
+
+Is this similar to Quantopian?
+++++++++++++++++++++++++++++++
+No.
+
++------------+----------------------------------------------+-----------------------------------------+
+| Feature    | Quinclas                                     |  Quantopian                             |
++============+==============================================+=========================================+
+| Hosting    | You can host your own strategy               | You must use their online framework     |
++------------+----------------------------------------------+-----------------------------------------+
+| Execution  | You are responsible for electronic exeuction | They will execute your strategy for you |
++------------+----------------------------------------------+-----------------------------------------+
+
+Coding Style
+------------
+
+Why autoconf?
++++++++++++++
+The primary reason is that we expect autoconf to be available on virtually all \*nix platforms,
+and we don't really want to be locked in to a few specific platforms.
+
+We are aware that more modern tooling is available. Perhaps we change at a later date.
+
+Why C++11?
+++++++++++
+Quite simply, we find it safer (e.g. the :code:`override` keyword) and we can leverage compiler support for
+platform specific features (e.g. :code:`#include <thread>`).
+
+Why do you name all event--handlers "on(...)"?
+++++++++++++++++++++++++++++++++++++++++++++++
+Two reasons
+
+    * We prefer to encapsulate the entire event in a struct. This achieves the following
+
+        * We can update the event struct without changing the event handler signature.
+          The event--handler will for example always look like :code:`void on(const MarketByPriceEvent &)`
+          even though we choose to add more fields to the event.
+          The implicit assumption is of course that the event struct maintains backwards compatibility.
+          So the idea is that there should be minimum impact on the user when upgrading to new releases.
+        * We can more easily pass the event message to other functions.
+          For example, you would have to do a lot of typing if your event handler looked like this
+          :code:`void on(const int a, const double b, const char *c)` and you wanted to pass all those
+          arguments on to other functions.
+          The alternative is to pass on a reference to a single struct, which is much more light--weight.
+
+    * It seems point--less to have the user write the same information twice.
+      For example, why write :code:`void onMarketByPrice(const MarketByPriceEvent &)`
+      when we can simply write :code:`void on(const MarketByPriceEvent &)` and then use
+      C++ to choose the correct handler based on the signature?
+

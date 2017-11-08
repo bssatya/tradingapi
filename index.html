@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quinclas — programmatic access to broker API’s. &mdash; Quinclas 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Quinclas 0.1 documentation" href="#"/>
+        <link rel="next" title="Gateways" href="gateways.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> Quinclas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gateways.html">Gateways</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conventions.html">Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references/c++.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references/distribution.html">Distribution</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Quinclas</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Quinclas — programmatic access to broker API’s.</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="quinclas-programmatic-access-to-broker-api-s">
+<h1>Quinclas — programmatic access to broker API’s.<a class="headerlink" href="#quinclas-programmatic-access-to-broker-api-s" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="design">
+<h2>Design<a class="headerlink" href="#design" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/design.png" src="_images/design.png" />
+</div>
+<div class="section" id="who-is-this-for">
+<h2>Who is this for?<a class="headerlink" href="#who-is-this-for" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Startup funds</li>
+<li>Algorithmic traders</li>
+<li>Quant developers</li>
+<li>C++ developers</li>
+<li>Python developers</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="the-proposition">
+<h2>The proposition<a class="headerlink" href="#the-proposition" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><strong>You own your strategy</strong>. Nobody else will have to see your code or binaries.</li>
+<li><strong>You can run your own strategies on your own hosts</strong>. To achieve this we will make a generic framework available on github.</li>
+<li><strong>You can license supported and tested market gateways</strong>. To save yourself the tedious work.</li>
+<li>Or <strong>you can write your own access to brokers or markets</strong>. It is an open platform. You are free to improve where you see an opportunity.</li>
+<li><strong>You can partner with us to have bespoke solutions implemented</strong>. Automatic tests against certain limits may help to protect you from losses, increased fees or market lock–out.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="solutions">
+<h2>Solutions<a class="headerlink" href="#solutions" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Gateways</strong> for standard broker interfaces. We have currently partnered with existing funds to develop, test and make gateways available.</li>
+<li>Expertise gained from developing <strong>protective rule–engines</strong> suitable for the use–cases of our partners.</li>
+<li>An <strong>execution engine</strong> leveraging licensed gateways, your strategy, and optionally your own protective rule–engine.</li>
+<li>Generic <strong>simulated gateway</strong> implementing basic order–matching for a few standard order types, e.g. market– and limit–orders.</li>
+<li>Generic <strong>event collector</strong> as an enabler for your historical simulation and back–testing.</li>
+<li>A <strong>simulation engine</strong> leveraging historically collected events and the generic simulation gateway.</li>
+<li>All <strong>tools</strong> and <strong>libraries</strong> open–sourced and available for C++11 and Python 2/3.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="why-should-you-consider-this-solution">
+<h2>Why should you consider this solution?<a class="headerlink" href="#why-should-you-consider-this-solution" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>You work for a small fund or a startup and you don’t have access to the resources normally available to the larger players.</li>
+<li>You appreciate the idea that standardized market access will help you access liquidity offered by various brokers as your fund grows bigger.</li>
+<li>You think it is more beneficial to focus on your own algorithms rather than spend a lot of time on the communication protocol to the broker.</li>
+<li>You believe a partnership is beneficial because access to industry–wide ideas will help you keep up.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="is-there-a-catch">
+<h2>Is there a catch?<a class="headerlink" href="#is-there-a-catch" title="Permalink to this headline">¶</a></h2>
+<p>Only options.
+No obligations.
+There is no catch.</p>
+<p>Everything is designed so you can implement your own solutions, if you should wish to do so.</p>
+<p>However, if you choose to do everything yourself, you should consider that there will be an re–occuring task to keep up with broker API’s.
+That will not be a negligible task.
+We believe it makes better sense to share this workload with as many clients as possible.
+So for this use–case, a licensed solution might seem a better option.</p>
+<p>We appreciate rule–engines can be very specific to each client.
+Consultancy is probably a better fit for these kind of use–cases.</p>
+<p>It is very simple</p>
+<blockquote>
+<div><ul class="simple">
+<li>We want to help you feel a little more <strong>secure</strong> when you auto–execute your strategies.</li>
+<li>We want to own the solutions where we think it makes best sense to <strong>offer high–quality supported solutions</strong> to a number of clients.</li>
+<li>We want to work in <strong>partnership</strong> with you such that we both learn from our experiences.</li>
+<li>We want to build a <strong>community</strong> with generic open–sourced tooling.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="next-steps">
+<h2>Next steps?<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
+<p>Feel free to contact us on <a class="reference external" href="mailto:thraneh&#37;&#52;&#48;gmail&#46;com">email</a> for further details.</p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gateways.html">Gateways</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conventions.html">Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references/c++.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references/distribution.html">Distribution</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gateways.html" class="btn btn-neutral float-right" title="Gateways" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Hans Erik Thrane.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

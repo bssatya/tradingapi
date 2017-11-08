@@ -1,0 +1,42 @@
+Strategy
+========
+
+The declaration of your strategy will look something like this
+
+.. code-block:: cpp
+
+    class Strategy final : public quinclas::common::Strategy {
+     public:
+        Strategy(quinclas::common::Strategy::Dispatcher& dispatcher, ...);
+     private:
+        // idle (empty queue)
+        void on(const quinclas::common::IdleEvent&) override;
+        // connection and login status
+        //    ... re-initialize if you have been disconnected or logged out
+        void on(const quinclas::common::GatewayStatusEvent&) override;
+        // reference data and market status
+        //    ... capture e.g. tick-size or check if market is open for trading
+        void on(const quinclas::common::ReferenceDataEvent&) override;
+        void on(const quinclas::common::MarketStatusEvent&) override;
+        // market data and statistics
+        //    ... probably the main update methods for your strategy
+        void on(const quinclas::common::MarketByPriceEvent&) override;
+        void on(const quinclas::common::SessionStatisticsEvent&) override;
+        void on(const quinclas::common::DailyStatisticsEvent&) override;
+        // create-, modify- and cancel-order acks
+        //    ... success or failure response to your order actions
+        void on(const quinclas::common::CreateOrderAckEvent&) override;
+        void on(const quinclas::common::ModifyOrderAckEvent&) override;
+        void on(const quinclas::common::CancelOrderAckEvent&) override;
+        // order and trade updates
+        //    ... monitor working orders and update positions
+        void on(const quinclas::common::OrderUpdateEvent&) override;
+        void on(const quinclas::common::TradeUpdateEvent&) override;
+        // the rest is pretty standard...
+        Strategy(const Strategy&) = delete;
+        Strategy& operator=(const Strategy&) = delete;
+        quinclas::common::Strategy::Dispatcher& _dispatcher
+    };
+
+.. doxygenclass:: quinclas::common::Strategy
+    :members:

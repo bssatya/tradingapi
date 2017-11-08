@@ -1,0 +1,43 @@
+Events
+======
+
+.. doxygenstruct:: quinclas::common::IdleEvent
+    :members:
+
+.. doxygenstruct:: quinclas::common::GatewayStatusEvent
+    :members:
+
+.. doxygenstruct:: quinclas::common::ReferenceDataEvent
+    :members:
+
+.. doxygenstruct:: quinclas::common::MarketStatusEvent
+    :members:
+
+.. doxygenstruct:: quinclas::common::MarketByPriceEvent
+    :members:
+
+.. doxygenstruct:: quinclas::common::SessionStatisticsEvent
+    :members:
+
+.. doxygenstruct:: quinclas::common::DailyStatisticsEvent
+    :members:
+
+.. doxygenstruct:: quinclas::common::CreateOrderAckEvent
+    :members:
+
+.. doxygenstruct:: quinclas::common::ModifyOrderAckEvent
+    :members:
+
+.. doxygenstruct:: quinclas::common::CancelOrderAckEvent
+    :members:
+
+.. doxygenstruct:: quinclas::common::OrderUpdateEvent
+    :members:
+
+.. doxygenstruct:: quinclas::common::TradeUpdateEvent
+    :members:
+
+Following event should not be used ... they are experimental.
+
+.. doxygenstruct:: quinclas::common::TerminationEvent
+    :members:

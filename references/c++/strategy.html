@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Strategy &mdash; Quinclas 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Quinclas 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="C++" href="../c++.html"/>
+        <link rel="next" title="Distribution" href="../distribution.html"/>
+        <link rel="prev" title="Gateway" href="gateway.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Quinclas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gateways.html">Gateways</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../conventions.html">Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../c++.html">C++</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="typedefs.html">Typedefs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs.html">Structs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="requests.html">Requests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gateway.html">Gateway</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Strategy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../distribution.html">Distribution</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Quinclas</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../c++.html">C++</a> &raquo;</li>
+        
+      <li>Strategy</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/references/c++/strategy.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="strategy">
+<h1>Strategy<a class="headerlink" href="#strategy" title="Permalink to this headline">¶</a></h1>
+<p>The declaration of your strategy will look something like this</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Strategy</span> <span class="k">final</span> <span class="o">:</span> <span class="k">public</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">Strategy</span> <span class="p">{</span>
+ <span class="k">public</span><span class="o">:</span>
+    <span class="n">Strategy</span><span class="p">(</span><span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">Strategy</span><span class="o">::</span><span class="n">Dispatcher</span><span class="o">&amp;</span> <span class="n">dispatcher</span><span class="p">,</span> <span class="p">...);</span>
+ <span class="k">private</span><span class="o">:</span>
+    <span class="c1">// idle (empty queue)</span>
+    <span class="kt">void</span> <span class="n">on</span><span class="p">(</span><span class="k">const</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">IdleEvent</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="c1">// connection and login status</span>
+    <span class="c1">//    ... re-initialize if you have been disconnected or logged out</span>
+    <span class="kt">void</span> <span class="nf">on</span><span class="p">(</span><span class="k">const</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">GatewayStatusEvent</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="c1">// reference data and market status</span>
+    <span class="c1">//    ... capture e.g. tick-size or check if market is open for trading</span>
+    <span class="kt">void</span> <span class="nf">on</span><span class="p">(</span><span class="k">const</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">ReferenceDataEvent</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="nf">on</span><span class="p">(</span><span class="k">const</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">MarketStatusEvent</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="c1">// market data and statistics</span>
+    <span class="c1">//    ... probably the main update methods for your strategy</span>
+    <span class="kt">void</span> <span class="nf">on</span><span class="p">(</span><span class="k">const</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">MarketByPriceEvent</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="nf">on</span><span class="p">(</span><span class="k">const</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">SessionStatisticsEvent</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="nf">on</span><span class="p">(</span><span class="k">const</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">DailyStatisticsEvent</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="c1">// create-, modify- and cancel-order acks</span>
+    <span class="c1">//    ... success or failure response to your order actions</span>
+    <span class="kt">void</span> <span class="nf">on</span><span class="p">(</span><span class="k">const</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">CreateOrderAckEvent</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="nf">on</span><span class="p">(</span><span class="k">const</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">ModifyOrderAckEvent</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="nf">on</span><span class="p">(</span><span class="k">const</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">CancelOrderAckEvent</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="c1">// order and trade updates</span>
+    <span class="c1">//    ... monitor working orders and update positions</span>
+    <span class="kt">void</span> <span class="nf">on</span><span class="p">(</span><span class="k">const</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">OrderUpdateEvent</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="nf">on</span><span class="p">(</span><span class="k">const</span> <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">TradeUpdateEvent</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="c1">// the rest is pretty standard...</span>
+    <span class="n">Strategy</span><span class="p">(</span><span class="k">const</span> <span class="n">Strategy</span><span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+    <span class="n">Strategy</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Strategy</span><span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+    <span class="n">quinclas</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">Strategy</span><span class="o">::</span><span class="n">Dispatcher</span><span class="o">&amp;</span> <span class="n">_dispatcher</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common8StrategyE">
+<span id="quinclas::common::Strategy"></span><span class="target" id="classquinclas_1_1common_1_1_strategy"></span><em class="property">class </em><code class="descclassname">quinclas::common::</code><code class="descname">Strategy</code><a class="headerlink" href="#_CPPv2N8quinclas6common8StrategyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#classquinclas_1_1common_1_1_strategy"><span class="std std-ref">Strategy</span></a> interface. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy2onERK9IdleEvent">
+<span id="quinclas::common::Strategy::on__IdleEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1a4f2beed06204a844267e62d70b04a7ba"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common9IdleEventE" title="quinclas::common::IdleEvent">IdleEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy2onERK9IdleEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Idle. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy2onERK18GatewayStatusEvent">
+<span id="quinclas::common::Strategy::on__GatewayStatusEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1ad1f2f762ebdb597cd6562ce75980ce00"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common18GatewayStatusEventE" title="quinclas::common::GatewayStatusEvent">GatewayStatusEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy2onERK18GatewayStatusEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Connection or login status has changed for a gateway. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy2onERK18ReferenceDataEvent">
+<span id="quinclas::common::Strategy::on__ReferenceDataEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1a6be868f4e75cb182c59de06cd95abd54"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common18ReferenceDataEventE" title="quinclas::common::ReferenceDataEvent">ReferenceDataEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy2onERK18ReferenceDataEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference data update for an instrument. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy2onERK17MarketStatusEvent">
+<span id="quinclas::common::Strategy::on__MarketStatusEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1a05464eaf6588fddd53753214a33a2647"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common17MarketStatusEventE" title="quinclas::common::MarketStatusEvent">MarketStatusEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy2onERK17MarketStatusEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Market status update for an instrument. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy2onERK18MarketByPriceEvent">
+<span id="quinclas::common::Strategy::on__MarketByPriceEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1a2bab43ea1d9d7d534e1b40414e1abc2f"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common18MarketByPriceEventE" title="quinclas::common::MarketByPriceEvent">MarketByPriceEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy2onERK18MarketByPriceEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Market-by-price update for an instrument. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy2onERK22SessionStatisticsEvent">
+<span id="quinclas::common::Strategy::on__SessionStatisticsEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1a0df5cb64a0982f26ff4d511d1c89b4dd"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common22SessionStatisticsEventE" title="quinclas::common::SessionStatisticsEvent">SessionStatisticsEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy2onERK22SessionStatisticsEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Session statistics update for an instrument. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy2onERK20DailyStatisticsEvent">
+<span id="quinclas::common::Strategy::on__DailyStatisticsEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1a1500aad9e7acaebe45697334b351f09b"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common20DailyStatisticsEventE" title="quinclas::common::DailyStatisticsEvent">DailyStatisticsEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy2onERK20DailyStatisticsEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Daily statistics update for an instrument. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy2onERK19CreateOrderAckEvent">
+<span id="quinclas::common::Strategy::on__CreateOrderAckEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1aa89d7ed625501a07689080e894c7f3b3"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common19CreateOrderAckEventE" title="quinclas::common::CreateOrderAckEvent">CreateOrderAckEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy2onERK19CreateOrderAckEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Response to a create order request. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy2onERK19ModifyOrderAckEvent">
+<span id="quinclas::common::Strategy::on__ModifyOrderAckEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1a8c765a0362a4b7b7b0f2fb2522cffc22"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common19ModifyOrderAckEventE" title="quinclas::common::ModifyOrderAckEvent">ModifyOrderAckEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy2onERK19ModifyOrderAckEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Response to a modify order request. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy2onERK19CancelOrderAckEvent">
+<span id="quinclas::common::Strategy::on__CancelOrderAckEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1acef74a14504824db01c218b0d057607a"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common19CancelOrderAckEventE" title="quinclas::common::CancelOrderAckEvent">CancelOrderAckEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy2onERK19CancelOrderAckEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Response to a cancel order request. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy2onERK16OrderUpdateEvent">
+<span id="quinclas::common::Strategy::on__OrderUpdateEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1a61af1e394412d5fea0871682e9211465"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common16OrderUpdateEventE" title="quinclas::common::OrderUpdateEvent">OrderUpdateEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy2onERK16OrderUpdateEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>New order, or order details have been updated. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy2onERK16TradeUpdateEvent">
+<span id="quinclas::common::Strategy::on__TradeUpdateEventCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1a7fca4a289b740ca701e2faca8538a40d"></span><em class="property">virtual</em> void <code class="descname">on</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="events.html#_CPPv2N8quinclas6common16TradeUpdateEventE" title="quinclas::common::TradeUpdateEvent">TradeUpdateEvent</a>&amp;<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy2onERK16TradeUpdateEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>New trade, or trade details have been updated. </p>
+</dd></dl>
+
+</div>
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common8Strategy10DispatcherE">
+<span id="quinclas::common::Strategy::Dispatcher"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1_1_dispatcher"></span><em class="property">class </em><code class="descname">Dispatcher</code><a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy10DispatcherE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy10Dispatcher4sendERK18CreateOrderRequest">
+<span id="quinclas::common::Strategy::Dispatcher::send__CreateOrderRequestCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1_1_dispatcher_1aac7addbc580b81477b8eca313479e7d6"></span><em class="property">virtual</em> void <code class="descname">send</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="requests.html#_CPPv2N8quinclas6common18CreateOrderRequestE" title="quinclas::common::CreateOrderRequest">CreateOrderRequest</a> &amp;<em>create_order_request</em><span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy10Dispatcher4sendERK18CreateOrderRequest" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Send <a class="reference internal" href="structs.html#structquinclas_1_1common_1_1_create_order"><span class="std std-ref">CreateOrder</span></a> request.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">create_order_request</span></code>: has the order creation request details. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy10Dispatcher4sendERK18ModifyOrderRequest">
+<span id="quinclas::common::Strategy::Dispatcher::send__ModifyOrderRequestCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1_1_dispatcher_1ae935f708ddafd45b3ab66668ea7ad473"></span><em class="property">virtual</em> void <code class="descname">send</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="requests.html#_CPPv2N8quinclas6common18ModifyOrderRequestE" title="quinclas::common::ModifyOrderRequest">ModifyOrderRequest</a> &amp;<em>modify_order_request</em><span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy10Dispatcher4sendERK18ModifyOrderRequest" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Send <a class="reference internal" href="structs.html#structquinclas_1_1common_1_1_modify_order"><span class="std std-ref">ModifyOrder</span></a> request.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">modify_order_request</span></code>: has the order modification request details. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8quinclas6common8Strategy10Dispatcher4sendERK18CancelOrderRequest">
+<span id="quinclas::common::Strategy::Dispatcher::send__CancelOrderRequestCR"></span><span class="target" id="classquinclas_1_1common_1_1_strategy_1_1_dispatcher_1ad65d6e2ba484ce1cb8c2425589a4a2b7"></span><em class="property">virtual</em> void <code class="descname">send</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="requests.html#_CPPv2N8quinclas6common18CancelOrderRequestE" title="quinclas::common::CancelOrderRequest">CancelOrderRequest</a> &amp;<em>cancel_order_request</em><span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv2N8quinclas6common8Strategy10Dispatcher4sendERK18CancelOrderRequest" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Send <a class="reference internal" href="structs.html#structquinclas_1_1common_1_1_cancel_order"><span class="std std-ref">CancelOrder</span></a> request.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">cancel_order_request</span></code>: has the order cancellation request details. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../distribution.html" class="btn btn-neutral float-right" title="Distribution" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gateway.html" class="btn btn-neutral" title="Gateway" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Hans Erik Thrane.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

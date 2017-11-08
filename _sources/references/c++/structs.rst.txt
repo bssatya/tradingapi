@@ -1,0 +1,50 @@
+Structs
+=======
+
+.. doxygenstruct:: quinclas::common::GatewayStatus
+    :members:
+
+.. doxygenstruct:: quinclas::common::MarketByPrice
+    :members:
+
+.. doxygenstruct:: quinclas::common::SessionStatistics
+    :members:
+
+.. doxygenstruct:: quinclas::common::DailyStatistics
+    :members:
+
+.. doxygenstruct:: quinclas::common::ReferenceData
+    :members:
+
+.. doxygenstruct:: quinclas::common::MarketStatus
+    :members:
+
+.. doxygenstruct:: quinclas::common::CreateOrderAck
+    :members:
+
+.. doxygenstruct:: quinclas::common::ModifyOrderAck
+    :members:
+
+.. doxygenstruct:: quinclas::common::CancelOrderAck
+    :members:
+
+.. doxygenstruct:: quinclas::common::OrderUpdate
+    :members:
+
+.. doxygenstruct:: quinclas::common::TradeUpdate
+    :members:
+
+.. doxygenstruct:: quinclas::common::CreateOrder
+    :members:
+
+.. doxygenstruct:: quinclas::common::ModifyOrder
+    :members:
+
+.. doxygenstruct:: quinclas::common::CancelOrder
+    :members:
+
+.. doxygenstruct:: quinclas::common::MessageInfo
+    :members:
+
+.. doxygenstruct:: quinclas::common::RequestInfo
+    :members:

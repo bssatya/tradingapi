@@ -1,0 +1,509 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Events &mdash; Quinclas 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Quinclas 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="C++" href="../c++.html"/>
+        <link rel="next" title="Requests" href="requests.html"/>
+        <link rel="prev" title="Structs" href="structs.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Quinclas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gateways.html">Gateways</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../conventions.html">Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../c++.html">C++</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="typedefs.html">Typedefs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs.html">Structs</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="requests.html">Requests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gateway.html">Gateway</a></li>
+<li class="toctree-l2"><a class="reference internal" href="strategy.html">Strategy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../distribution.html">Distribution</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Quinclas</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../c++.html">C++</a> &raquo;</li>
+        
+      <li>Events</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/references/c++/events.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="events">
+<h1>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common9IdleEventE">
+<span id="quinclas::common::IdleEvent"></span><span class="target" id="structquinclas_1_1common_1_1_idle_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">IdleEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common9IdleEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Idle event. </p>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common18GatewayStatusEventE">
+<span id="quinclas::common::GatewayStatusEvent"></span><span class="target" id="structquinclas_1_1common_1_1_gateway_status_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">GatewayStatusEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common18GatewayStatusEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="gateway.html#classquinclas_1_1common_1_1_gateway"><span class="std std-ref">Gateway</span></a> status update event. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common18GatewayStatusEvent12message_infoE">
+<span id="quinclas::common::GatewayStatusEvent::message_info__MessageInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_gateway_status_event_1a50ad3a396e38f6d495b921743cbc6a40"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11MessageInfoE" title="quinclas::common::MessageInfo">MessageInfo</a> &amp;<code class="descname">message_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common18GatewayStatusEvent12message_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Message info. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common18GatewayStatusEvent14gateway_statusE">
+<span id="quinclas::common::GatewayStatusEvent::gateway_status__GatewayStatusCR"></span><span class="target" id="structquinclas_1_1common_1_1_gateway_status_event_1aa558533d30cf3c7d1155cf4d18d6f0e3"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common13GatewayStatusE" title="quinclas::common::GatewayStatus">GatewayStatus</a> &amp;<code class="descname">gateway_status</code><a class="headerlink" href="#_CPPv2N8quinclas6common18GatewayStatusEvent14gateway_statusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="gateway.html#classquinclas_1_1common_1_1_gateway"><span class="std std-ref">Gateway</span></a> status update. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common18ReferenceDataEventE">
+<span id="quinclas::common::ReferenceDataEvent"></span><span class="target" id="structquinclas_1_1common_1_1_reference_data_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">ReferenceDataEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common18ReferenceDataEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference data update event. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common18ReferenceDataEvent12message_infoE">
+<span id="quinclas::common::ReferenceDataEvent::message_info__MessageInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_reference_data_event_1a276031b849aebadf233cda2cb7fcffb4"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11MessageInfoE" title="quinclas::common::MessageInfo">MessageInfo</a> &amp;<code class="descname">message_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common18ReferenceDataEvent12message_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Message info. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common18ReferenceDataEvent14reference_dataE">
+<span id="quinclas::common::ReferenceDataEvent::reference_data__ReferenceDataCR"></span><span class="target" id="structquinclas_1_1common_1_1_reference_data_event_1ab5e06c14fcc419284336147dbe1ef633"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common13ReferenceDataE" title="quinclas::common::ReferenceData">ReferenceData</a> &amp;<code class="descname">reference_data</code><a class="headerlink" href="#_CPPv2N8quinclas6common18ReferenceDataEvent14reference_dataE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference data update. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common17MarketStatusEventE">
+<span id="quinclas::common::MarketStatusEvent"></span><span class="target" id="structquinclas_1_1common_1_1_market_status_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">MarketStatusEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common17MarketStatusEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Market status update event. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common17MarketStatusEvent12message_infoE">
+<span id="quinclas::common::MarketStatusEvent::message_info__MessageInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_market_status_event_1aeb14b263e10e8231bbcd88b7664b1c4a"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11MessageInfoE" title="quinclas::common::MessageInfo">MessageInfo</a> &amp;<code class="descname">message_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common17MarketStatusEvent12message_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Message info. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common17MarketStatusEvent13market_statusE">
+<span id="quinclas::common::MarketStatusEvent::market_status__MarketStatusCR"></span><span class="target" id="structquinclas_1_1common_1_1_market_status_event_1a7f5a91b9fb54b055b6784ed9ec350d8c"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common12MarketStatusE" title="quinclas::common::MarketStatus">MarketStatus</a> &amp;<code class="descname">market_status</code><a class="headerlink" href="#_CPPv2N8quinclas6common17MarketStatusEvent13market_statusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Market status update. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common18MarketByPriceEventE">
+<span id="quinclas::common::MarketByPriceEvent"></span><span class="target" id="structquinclas_1_1common_1_1_market_by_price_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">MarketByPriceEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common18MarketByPriceEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Market depth update event. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common18MarketByPriceEvent12message_infoE">
+<span id="quinclas::common::MarketByPriceEvent::message_info__MessageInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_market_by_price_event_1a82a8d993dc07e360b9fc41846a24662a"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11MessageInfoE" title="quinclas::common::MessageInfo">MessageInfo</a> &amp;<code class="descname">message_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common18MarketByPriceEvent12message_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Message info. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common18MarketByPriceEvent15market_by_priceE">
+<span id="quinclas::common::MarketByPriceEvent::market_by_price__MarketByPriceCR"></span><span class="target" id="structquinclas_1_1common_1_1_market_by_price_event_1abd54b47e1242cb00936847ed461bbe1a"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common13MarketByPriceE" title="quinclas::common::MarketByPrice">MarketByPrice</a> &amp;<code class="descname">market_by_price</code><a class="headerlink" href="#_CPPv2N8quinclas6common18MarketByPriceEvent15market_by_priceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Market-by-price update. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common22SessionStatisticsEventE">
+<span id="quinclas::common::SessionStatisticsEvent"></span><span class="target" id="structquinclas_1_1common_1_1_session_statistics_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">SessionStatisticsEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common22SessionStatisticsEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Session statistics update event. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common22SessionStatisticsEvent12message_infoE">
+<span id="quinclas::common::SessionStatisticsEvent::message_info__MessageInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_session_statistics_event_1a293ffe1d5d9f01fb25f2658d17f8bf3e"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11MessageInfoE" title="quinclas::common::MessageInfo">MessageInfo</a> &amp;<code class="descname">message_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common22SessionStatisticsEvent12message_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Message info. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common22SessionStatisticsEvent18session_statisticsE">
+<span id="quinclas::common::SessionStatisticsEvent::session_statistics__SessionStatisticsCR"></span><span class="target" id="structquinclas_1_1common_1_1_session_statistics_event_1a70d23bdf5086c67e0fb13ce2af80f4e9"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common17SessionStatisticsE" title="quinclas::common::SessionStatistics">SessionStatistics</a> &amp;<code class="descname">session_statistics</code><a class="headerlink" href="#_CPPv2N8quinclas6common22SessionStatisticsEvent18session_statisticsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Session statistics update. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common20DailyStatisticsEventE">
+<span id="quinclas::common::DailyStatisticsEvent"></span><span class="target" id="structquinclas_1_1common_1_1_daily_statistics_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">DailyStatisticsEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common20DailyStatisticsEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Daily statistics update event. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common20DailyStatisticsEvent12message_infoE">
+<span id="quinclas::common::DailyStatisticsEvent::message_info__MessageInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_daily_statistics_event_1a5c6471d341b43cd4f5cc38df3e8d0448"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11MessageInfoE" title="quinclas::common::MessageInfo">MessageInfo</a> &amp;<code class="descname">message_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common20DailyStatisticsEvent12message_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Message info. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common20DailyStatisticsEvent16daily_statisticsE">
+<span id="quinclas::common::DailyStatisticsEvent::daily_statistics__DailyStatisticsCR"></span><span class="target" id="structquinclas_1_1common_1_1_daily_statistics_event_1a202a45d302d630c87fcac374dfd8b242"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common15DailyStatisticsE" title="quinclas::common::DailyStatistics">DailyStatistics</a> &amp;<code class="descname">daily_statistics</code><a class="headerlink" href="#_CPPv2N8quinclas6common20DailyStatisticsEvent16daily_statisticsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Daily statistics update. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common19CreateOrderAckEventE">
+<span id="quinclas::common::CreateOrderAckEvent"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_ack_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">CreateOrderAckEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common19CreateOrderAckEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create order ack event. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common19CreateOrderAckEvent12message_infoE">
+<span id="quinclas::common::CreateOrderAckEvent::message_info__MessageInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_ack_event_1a433d98147545f057f1c981e67ee19557"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11MessageInfoE" title="quinclas::common::MessageInfo">MessageInfo</a> &amp;<code class="descname">message_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common19CreateOrderAckEvent12message_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Message info. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common19CreateOrderAckEvent16create_order_ackE">
+<span id="quinclas::common::CreateOrderAckEvent::create_order_ack__CreateOrderAckCR"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_ack_event_1a106820c8e125984ab2ab327b03a1f3d9"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common14CreateOrderAckE" title="quinclas::common::CreateOrderAck">CreateOrderAck</a> &amp;<code class="descname">create_order_ack</code><a class="headerlink" href="#_CPPv2N8quinclas6common19CreateOrderAckEvent16create_order_ackE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create order ack. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common19ModifyOrderAckEventE">
+<span id="quinclas::common::ModifyOrderAckEvent"></span><span class="target" id="structquinclas_1_1common_1_1_modify_order_ack_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">ModifyOrderAckEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common19ModifyOrderAckEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Modify order ack event. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common19ModifyOrderAckEvent12message_infoE">
+<span id="quinclas::common::ModifyOrderAckEvent::message_info__MessageInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_modify_order_ack_event_1a8e3052c5ab1117840f811f848629972a"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11MessageInfoE" title="quinclas::common::MessageInfo">MessageInfo</a> &amp;<code class="descname">message_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common19ModifyOrderAckEvent12message_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Message info. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common19ModifyOrderAckEvent16modify_order_ackE">
+<span id="quinclas::common::ModifyOrderAckEvent::modify_order_ack__ModifyOrderAckCR"></span><span class="target" id="structquinclas_1_1common_1_1_modify_order_ack_event_1aee3a23c1bb98b872d7a869e6dc66e2b7"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common14ModifyOrderAckE" title="quinclas::common::ModifyOrderAck">ModifyOrderAck</a> &amp;<code class="descname">modify_order_ack</code><a class="headerlink" href="#_CPPv2N8quinclas6common19ModifyOrderAckEvent16modify_order_ackE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Modify order ack. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common19CancelOrderAckEventE">
+<span id="quinclas::common::CancelOrderAckEvent"></span><span class="target" id="structquinclas_1_1common_1_1_cancel_order_ack_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">CancelOrderAckEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common19CancelOrderAckEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Cancel order ack event. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common19CancelOrderAckEvent12message_infoE">
+<span id="quinclas::common::CancelOrderAckEvent::message_info__MessageInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_cancel_order_ack_event_1aeead6d403400cb5c0391aa78be450c8a"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11MessageInfoE" title="quinclas::common::MessageInfo">MessageInfo</a> &amp;<code class="descname">message_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common19CancelOrderAckEvent12message_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Message info. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common19CancelOrderAckEvent16cancel_order_ackE">
+<span id="quinclas::common::CancelOrderAckEvent::cancel_order_ack__CancelOrderAckCR"></span><span class="target" id="structquinclas_1_1common_1_1_cancel_order_ack_event_1aeaaef7af597c77b646fbebab0e203504"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common14CancelOrderAckE" title="quinclas::common::CancelOrderAck">CancelOrderAck</a> &amp;<code class="descname">cancel_order_ack</code><a class="headerlink" href="#_CPPv2N8quinclas6common19CancelOrderAckEvent16cancel_order_ackE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Cancel order ack. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common16OrderUpdateEventE">
+<span id="quinclas::common::OrderUpdateEvent"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">OrderUpdateEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common16OrderUpdateEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order update event. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common16OrderUpdateEvent12message_infoE">
+<span id="quinclas::common::OrderUpdateEvent::message_info__MessageInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_event_1aef00f8a94652b8e61c412e78096e8d01"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11MessageInfoE" title="quinclas::common::MessageInfo">MessageInfo</a> &amp;<code class="descname">message_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common16OrderUpdateEvent12message_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Message info. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common16OrderUpdateEvent12order_updateE">
+<span id="quinclas::common::OrderUpdateEvent::order_update__OrderUpdateCR"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_event_1adc1c48a0e0f47cc864143db340c3e148"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11OrderUpdateE" title="quinclas::common::OrderUpdate">OrderUpdate</a> &amp;<code class="descname">order_update</code><a class="headerlink" href="#_CPPv2N8quinclas6common16OrderUpdateEvent12order_updateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order update. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common16TradeUpdateEventE">
+<span id="quinclas::common::TradeUpdateEvent"></span><span class="target" id="structquinclas_1_1common_1_1_trade_update_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">TradeUpdateEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common16TradeUpdateEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Trade update event. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common16TradeUpdateEvent12message_infoE">
+<span id="quinclas::common::TradeUpdateEvent::message_info__MessageInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_trade_update_event_1a92993760aca1761e00d0f59280a7d9f3"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11MessageInfoE" title="quinclas::common::MessageInfo">MessageInfo</a> &amp;<code class="descname">message_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common16TradeUpdateEvent12message_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Message info. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common16TradeUpdateEvent12trade_updateE">
+<span id="quinclas::common::TradeUpdateEvent::trade_update__TradeUpdateCR"></span><span class="target" id="structquinclas_1_1common_1_1_trade_update_event_1a091d6e942943e32daf2ebaa79d7cbda9"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11TradeUpdateE" title="quinclas::common::TradeUpdate">TradeUpdate</a> &amp;<code class="descname">trade_update</code><a class="headerlink" href="#_CPPv2N8quinclas6common16TradeUpdateEvent12trade_updateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Trade update. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<p>Following event should not be used … they are experimental.</p>
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common16TerminationEventE">
+<span id="quinclas::common::TerminationEvent"></span><span class="target" id="structquinclas_1_1common_1_1_termination_event"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">TerminationEvent</code><a class="headerlink" href="#_CPPv2N8quinclas6common16TerminationEventE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Termination event. EXPERIMENTAL </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common16TerminationEvent7gatewayE">
+<span id="quinclas::common::TerminationEvent::gateway__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_termination_event_1a620a51aace859ec5774bfac5e7987788"></span><em class="property">const</em> char *<code class="descname">gateway</code><a class="headerlink" href="#_CPPv2N8quinclas6common16TerminationEvent7gatewayE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="gateway.html#classquinclas_1_1common_1_1_gateway"><span class="std std-ref">Gateway</span></a> name. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="requests.html" class="btn btn-neutral float-right" title="Requests" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="structs.html" class="btn btn-neutral" title="Structs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Hans Erik Thrane.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

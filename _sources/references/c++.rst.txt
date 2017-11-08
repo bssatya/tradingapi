@@ -1,0 +1,13 @@
+C++
+===
+
+.. toctree::
+   :maxdepth: 2
+
+   c++/typedefs
+   c++/enums
+   c++/structs
+   c++/events
+   c++/requests
+   c++/gateway
+   c++/strategy

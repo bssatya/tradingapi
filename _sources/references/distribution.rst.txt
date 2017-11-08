@@ -1,0 +1,29 @@
+Distribution
+============
+
+.. toctree::
+   :maxdepth: 2
+
+   distribution/conda
+   distribution/debian
+   distribution/rpm
+
+API and tools
+
+        * :literal:`quinclas-tradingapi`
+        * :literal:`quinclas-tools`
+
+Broker gateways
+
+        * :literal:`quinclas-femasapi`
+        * :literal:`quinclas-twsapi`
+
+Thirdparty solutions
+
+        * :literal:`quinclas-3rd-femasapi`
+        * :literal:`quinclas-3rd-twsapi`
+
+Open--source solutions not available from conda-forge or anaconda
+
+        * :literal:`quinclas-oss-quickfix`
+        * :literal:`quinclas-oss-hiredis`

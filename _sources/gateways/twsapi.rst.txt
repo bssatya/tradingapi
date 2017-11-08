@@ -1,0 +1,37 @@
+TWS API
+=======
+
+Links
+-----
+
+        * `Documentation <https://interactivebrokers.github.io/tws-api/index.html>`_
+        * `github <https://github.com/InteractiveBrokers/tws-api-public>`_
+
+Brokers
+-------
+
+        * `Interactive Brokers <https://www.interactivebrokers.com/>`_
+
+
+Markets
+-------
+
+Many markets.
+
+Design
+------
+
+.. image:: /_static/twsapi.png
+
+Configuration
+-------------
+
+To be written...
+
+Notes
+-----
+
+There are various limits (restrictions) to observe
+
+        * The client is only allowed to send maximum 50 messages per second to the TWS gateway.
+        * A user can by default only subscribe 100 instruments. (This limit can be extended).

@@ -1,0 +1,34 @@
+FemasAPI
+========
+
+Links
+-----
+
+        * Documentation --- N/A
+        * github --- N/A
+
+Brokers
+-------
+
+To be written ...
+
+Markets
+-------
+
+        * `China Financial Futures Exchange (CFFEX) <http://www.cffex.com.cn/>`_
+        * `Shanghai Futures Exchange (SHFE) <http://www.shfe.com.cn/>`_
+
+Design
+------
+
+.. image:: /_static/femas1.png
+
+Configuration
+-------------
+
+To be written...
+
+Notes
+-----
+
+        * Up to 5 level of market-by-price

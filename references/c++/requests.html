@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Requests &mdash; Quinclas 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Quinclas 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="C++" href="../c++.html"/>
+        <link rel="next" title="Gateway" href="gateway.html"/>
+        <link rel="prev" title="Events" href="events.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Quinclas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gateways.html">Gateways</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../conventions.html">Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../c++.html">C++</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="typedefs.html">Typedefs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs.html">Structs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Requests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gateway.html">Gateway</a></li>
+<li class="toctree-l2"><a class="reference internal" href="strategy.html">Strategy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../distribution.html">Distribution</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Quinclas</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../c++.html">C++</a> &raquo;</li>
+        
+      <li>Requests</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/references/c++/requests.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="requests">
+<h1>Requests<a class="headerlink" href="#requests" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common18CreateOrderRequestE">
+<span id="quinclas::common::CreateOrderRequest"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_request"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">CreateOrderRequest</code><a class="headerlink" href="#_CPPv2N8quinclas6common18CreateOrderRequestE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common18CreateOrderRequest12request_infoE">
+<span id="quinclas::common::CreateOrderRequest::request_info__RequestInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_request_1aef4cdf646b051935ad93e65f0a1a647b"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11RequestInfoE" title="quinclas::common::RequestInfo">RequestInfo</a> &amp;<code class="descname">request_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common18CreateOrderRequest12request_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Routing information. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common18CreateOrderRequest12create_orderE">
+<span id="quinclas::common::CreateOrderRequest::create_order__CreateOrderCR"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_request_1ae8dbc16e2375a5b709c6e7b9b5a6c11c"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11CreateOrderE" title="quinclas::common::CreateOrder">CreateOrder</a> &amp;<code class="descname">create_order</code><a class="headerlink" href="#_CPPv2N8quinclas6common18CreateOrderRequest12create_orderE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create order details. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common18ModifyOrderRequestE">
+<span id="quinclas::common::ModifyOrderRequest"></span><span class="target" id="structquinclas_1_1common_1_1_modify_order_request"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">ModifyOrderRequest</code><a class="headerlink" href="#_CPPv2N8quinclas6common18ModifyOrderRequestE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common18ModifyOrderRequest12request_infoE">
+<span id="quinclas::common::ModifyOrderRequest::request_info__RequestInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_modify_order_request_1aecb3bf83e87bd4de673d56a2f1cb18ce"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11RequestInfoE" title="quinclas::common::RequestInfo">RequestInfo</a> &amp;<code class="descname">request_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common18ModifyOrderRequest12request_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Routing information. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common18ModifyOrderRequest12modify_orderE">
+<span id="quinclas::common::ModifyOrderRequest::modify_order__ModifyOrderCR"></span><span class="target" id="structquinclas_1_1common_1_1_modify_order_request_1aa59701ecca56b77d424c1a32e4870073"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11ModifyOrderE" title="quinclas::common::ModifyOrder">ModifyOrder</a> &amp;<code class="descname">modify_order</code><a class="headerlink" href="#_CPPv2N8quinclas6common18ModifyOrderRequest12modify_orderE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Modify order details. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common18CancelOrderRequestE">
+<span id="quinclas::common::CancelOrderRequest"></span><span class="target" id="structquinclas_1_1common_1_1_cancel_order_request"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">CancelOrderRequest</code><a class="headerlink" href="#_CPPv2N8quinclas6common18CancelOrderRequestE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common18CancelOrderRequest12request_infoE">
+<span id="quinclas::common::CancelOrderRequest::request_info__RequestInfoCR"></span><span class="target" id="structquinclas_1_1common_1_1_cancel_order_request_1a56d29f5bb626de56a17231155cb33632"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11RequestInfoE" title="quinclas::common::RequestInfo">RequestInfo</a> &amp;<code class="descname">request_info</code><a class="headerlink" href="#_CPPv2N8quinclas6common18CancelOrderRequest12request_infoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Routing information. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common18CancelOrderRequest12cancel_orderE">
+<span id="quinclas::common::CancelOrderRequest::cancel_order__CancelOrderCR"></span><span class="target" id="structquinclas_1_1common_1_1_cancel_order_request_1aebed7bd385abd04aa734a45fc7220108"></span><em class="property">const</em> <a class="reference internal" href="structs.html#_CPPv2N8quinclas6common11CancelOrderE" title="quinclas::common::CancelOrder">CancelOrder</a> &amp;<code class="descname">cancel_order</code><a class="headerlink" href="#_CPPv2N8quinclas6common18CancelOrderRequest12cancel_orderE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Cancel order details. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gateway.html" class="btn btn-neutral float-right" title="Gateway" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="events.html" class="btn btn-neutral" title="Events" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Hans Erik Thrane.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

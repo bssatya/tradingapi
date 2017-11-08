@@ -1,0 +1,808 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Structs &mdash; Quinclas 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Quinclas 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="C++" href="../c++.html"/>
+        <link rel="next" title="Events" href="events.html"/>
+        <link rel="prev" title="Enums" href="enums.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Quinclas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gateways.html">Gateways</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../conventions.html">Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../c++.html">C++</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="typedefs.html">Typedefs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Structs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="requests.html">Requests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gateway.html">Gateway</a></li>
+<li class="toctree-l2"><a class="reference internal" href="strategy.html">Strategy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../distribution.html">Distribution</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Quinclas</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../c++.html">C++</a> &raquo;</li>
+        
+      <li>Structs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/references/c++/structs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="structs">
+<h1>Structs<a class="headerlink" href="#structs" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common13GatewayStatusE">
+<span id="quinclas::common::GatewayStatus"></span><span class="target" id="structquinclas_1_1common_1_1_gateway_status"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">GatewayStatus</code><a class="headerlink" href="#_CPPv2N8quinclas6common13GatewayStatusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="gateway.html#classquinclas_1_1common_1_1_gateway"><span class="std std-ref">Gateway</span></a> status. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common13GatewayStatus29market_data_connection_statusE">
+<span id="quinclas::common::GatewayStatus::market_data_connection_status__ConnectionStatus"></span><span class="target" id="structquinclas_1_1common_1_1_gateway_status_1a05b2b30744f9c32dad054c6cf8f356cb"></span><a class="reference internal" href="enums.html#_CPPv2N8quinclas6common16ConnectionStatusE" title="quinclas::common::ConnectionStatus">ConnectionStatus</a> <code class="descname">market_data_connection_status</code><a class="headerlink" href="#_CPPv2N8quinclas6common13GatewayStatus29market_data_connection_statusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Connection status to market data infrastructure. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common13GatewayStatus24market_data_login_statusE">
+<span id="quinclas::common::GatewayStatus::market_data_login_status__LoginStatus"></span><span class="target" id="structquinclas_1_1common_1_1_gateway_status_1a59b37c876bb287cb45869eb793bb8b5c"></span><a class="reference internal" href="enums.html#_CPPv2N8quinclas6common11LoginStatusE" title="quinclas::common::LoginStatus">LoginStatus</a> <code class="descname">market_data_login_status</code><a class="headerlink" href="#_CPPv2N8quinclas6common13GatewayStatus24market_data_login_statusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Login status with market data infrastructure. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common13GatewayStatus34order_management_connection_statusE">
+<span id="quinclas::common::GatewayStatus::order_management_connection_status__ConnectionStatus"></span><span class="target" id="structquinclas_1_1common_1_1_gateway_status_1aaa3803f812885b0c86334e9cabab741f"></span><a class="reference internal" href="enums.html#_CPPv2N8quinclas6common16ConnectionStatusE" title="quinclas::common::ConnectionStatus">ConnectionStatus</a> <code class="descname">order_management_connection_status</code><a class="headerlink" href="#_CPPv2N8quinclas6common13GatewayStatus34order_management_connection_statusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Connection status to order management infrastructure. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common13GatewayStatus29order_management_login_statusE">
+<span id="quinclas::common::GatewayStatus::order_management_login_status__LoginStatus"></span><span class="target" id="structquinclas_1_1common_1_1_gateway_status_1ad3859b5a931dd06a3e3a884b7bc8a6b1"></span><a class="reference internal" href="enums.html#_CPPv2N8quinclas6common11LoginStatusE" title="quinclas::common::LoginStatus">LoginStatus</a> <code class="descname">order_management_login_status</code><a class="headerlink" href="#_CPPv2N8quinclas6common13GatewayStatus29order_management_login_statusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Login status with order management infrastructure. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common13MarketByPriceE">
+<span id="quinclas::common::MarketByPrice"></span><span class="target" id="structquinclas_1_1common_1_1_market_by_price"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">MarketByPrice</code><a class="headerlink" href="#_CPPv2N8quinclas6common13MarketByPriceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Market depth (aggregated view of an order book). </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common13MarketByPrice8exchangeE">
+<span id="quinclas::common::MarketByPrice::exchange__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_market_by_price_1a3bb872654928bb036bbc594507e87616"></span><em class="property">const</em> char *<code class="descname">exchange</code><a class="headerlink" href="#_CPPv2N8quinclas6common13MarketByPrice8exchangeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Exchange name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common13MarketByPrice10instrumentE">
+<span id="quinclas::common::MarketByPrice::instrument__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_market_by_price_1a21cd02b308937ac2d412c00b6bd18171"></span><em class="property">const</em> char *<code class="descname">instrument</code><a class="headerlink" href="#_CPPv2N8quinclas6common13MarketByPrice10instrumentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Instrument name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common13MarketByPrice5depthE">
+<span id="quinclas::common::MarketByPrice::depth__LayerA"></span><span class="target" id="structquinclas_1_1common_1_1_market_by_price_1afa78f690e58b29e204e20d0aef417278"></span>Layer <code class="descname">depth</code>[MAX_DEPTH]<a class="headerlink" href="#_CPPv2N8quinclas6common13MarketByPrice5depthE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Layers. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common17SessionStatisticsE">
+<span id="quinclas::common::SessionStatistics"></span><span class="target" id="structquinclas_1_1common_1_1_session_statistics"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">SessionStatistics</code><a class="headerlink" href="#_CPPv2N8quinclas6common17SessionStatisticsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Session statistics. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common17SessionStatistics8exchangeE">
+<span id="quinclas::common::SessionStatistics::exchange__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_session_statistics_1a054369b35f73c4a4b0a3e9eebfd36ccc"></span><em class="property">const</em> char *<code class="descname">exchange</code><a class="headerlink" href="#_CPPv2N8quinclas6common17SessionStatistics8exchangeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Exchange name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common17SessionStatistics10instrumentE">
+<span id="quinclas::common::SessionStatistics::instrument__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_session_statistics_1a417c1c131d9b24c15887905298d66761"></span><em class="property">const</em> char *<code class="descname">instrument</code><a class="headerlink" href="#_CPPv2N8quinclas6common17SessionStatistics10instrumentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Instrument name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common17SessionStatistics4openE">
+<span id="quinclas::common::SessionStatistics::open__double"></span><span class="target" id="structquinclas_1_1common_1_1_session_statistics_1ad1b4e704dcb2f8f03934c943d8a75bf2"></span>double <code class="descname">open</code><a class="headerlink" href="#_CPPv2N8quinclas6common17SessionStatistics4openE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Open price. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common17SessionStatistics4highE">
+<span id="quinclas::common::SessionStatistics::high__double"></span><span class="target" id="structquinclas_1_1common_1_1_session_statistics_1a51aa633735eceaa988489436e0315d6d"></span>double <code class="descname">high</code><a class="headerlink" href="#_CPPv2N8quinclas6common17SessionStatistics4highE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Highest traded price. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common17SessionStatistics3lowE">
+<span id="quinclas::common::SessionStatistics::low__double"></span><span class="target" id="structquinclas_1_1common_1_1_session_statistics_1a4b05cdfca76a9bdaff9501b295be2bb8"></span>double <code class="descname">low</code><a class="headerlink" href="#_CPPv2N8quinclas6common17SessionStatistics3lowE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Lowest traded price. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common15DailyStatisticsE">
+<span id="quinclas::common::DailyStatistics"></span><span class="target" id="structquinclas_1_1common_1_1_daily_statistics"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">DailyStatistics</code><a class="headerlink" href="#_CPPv2N8quinclas6common15DailyStatisticsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Daily market statistics. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common15DailyStatistics8exchangeE">
+<span id="quinclas::common::DailyStatistics::exchange__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_daily_statistics_1ae2de0e8e0a96b81866c5955cf0704be2"></span><em class="property">const</em> char *<code class="descname">exchange</code><a class="headerlink" href="#_CPPv2N8quinclas6common15DailyStatistics8exchangeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Exchange name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common15DailyStatistics10instrumentE">
+<span id="quinclas::common::DailyStatistics::instrument__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_daily_statistics_1a03659af739a8b8f34bf601c48a46a3f9"></span><em class="property">const</em> char *<code class="descname">instrument</code><a class="headerlink" href="#_CPPv2N8quinclas6common15DailyStatistics10instrumentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Instrument name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common15DailyStatistics10settlementE">
+<span id="quinclas::common::DailyStatistics::settlement__double"></span><span class="target" id="structquinclas_1_1common_1_1_daily_statistics_1a740ce3d539bc37bf05766758fc365bff"></span>double <code class="descname">settlement</code><a class="headerlink" href="#_CPPv2N8quinclas6common15DailyStatistics10settlementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Settlement price. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common15DailyStatistics13open_interestE">
+<span id="quinclas::common::DailyStatistics::open_interest__double"></span><span class="target" id="structquinclas_1_1common_1_1_daily_statistics_1ac443fe1c024905dddca56445ef5634b3"></span>double <code class="descname">open_interest</code><a class="headerlink" href="#_CPPv2N8quinclas6common15DailyStatistics13open_interestE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Open interest. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common15DailyStatistics6volumeE">
+<span id="quinclas::common::DailyStatistics::volume__double"></span><span class="target" id="structquinclas_1_1common_1_1_daily_statistics_1acc2308237a11330db31ee8b67c392199"></span>double <code class="descname">volume</code><a class="headerlink" href="#_CPPv2N8quinclas6common15DailyStatistics6volumeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Total volume. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common13ReferenceDataE">
+<span id="quinclas::common::ReferenceData"></span><span class="target" id="structquinclas_1_1common_1_1_reference_data"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">ReferenceData</code><a class="headerlink" href="#_CPPv2N8quinclas6common13ReferenceDataE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference data. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common13ReferenceData8exchangeE">
+<span id="quinclas::common::ReferenceData::exchange__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_reference_data_1a3509ea85840f5dd05217410fbeee4fd6"></span><em class="property">const</em> char *<code class="descname">exchange</code><a class="headerlink" href="#_CPPv2N8quinclas6common13ReferenceData8exchangeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Exchange name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common13ReferenceData10instrumentE">
+<span id="quinclas::common::ReferenceData::instrument__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_reference_data_1a10037e808d875cc243c4dd5ab775af96"></span><em class="property">const</em> char *<code class="descname">instrument</code><a class="headerlink" href="#_CPPv2N8quinclas6common13ReferenceData10instrumentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Instrument name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common13ReferenceData9tick_sizeE">
+<span id="quinclas::common::ReferenceData::tick_size__double"></span><span class="target" id="structquinclas_1_1common_1_1_reference_data_1ac09c4d770b30fe8b1704389f6dfa7a72"></span>double <code class="descname">tick_size</code><a class="headerlink" href="#_CPPv2N8quinclas6common13ReferenceData9tick_sizeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Tick size (price increments) </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common13ReferenceData8limit_upE">
+<span id="quinclas::common::ReferenceData::limit_up__double"></span><span class="target" id="structquinclas_1_1common_1_1_reference_data_1a0e0132ccea64d35b2185b38ec98980ca"></span>double <code class="descname">limit_up</code><a class="headerlink" href="#_CPPv2N8quinclas6common13ReferenceData8limit_upE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Price limit-up. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common13ReferenceData10limit_downE">
+<span id="quinclas::common::ReferenceData::limit_down__double"></span><span class="target" id="structquinclas_1_1common_1_1_reference_data_1a7c8e4e1ed2fba8cf6fa0d299956ca42e"></span>double <code class="descname">limit_down</code><a class="headerlink" href="#_CPPv2N8quinclas6common13ReferenceData10limit_downE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Price limit-down. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common12MarketStatusE">
+<span id="quinclas::common::MarketStatus"></span><span class="target" id="structquinclas_1_1common_1_1_market_status"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">MarketStatus</code><a class="headerlink" href="#_CPPv2N8quinclas6common12MarketStatusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Market status. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common12MarketStatus8exchangeE">
+<span id="quinclas::common::MarketStatus::exchange__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_market_status_1a7e8a4d83e17126c7afa23a54cd4b897c"></span><em class="property">const</em> char *<code class="descname">exchange</code><a class="headerlink" href="#_CPPv2N8quinclas6common12MarketStatus8exchangeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Exchange name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common12MarketStatus10instrumentE">
+<span id="quinclas::common::MarketStatus::instrument__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_market_status_1aa9b95c3ed3c10b2911b926f7d34c42be"></span><em class="property">const</em> char *<code class="descname">instrument</code><a class="headerlink" href="#_CPPv2N8quinclas6common12MarketStatus10instrumentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Instrument name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common12MarketStatus14trading_statusE">
+<span id="quinclas::common::MarketStatus::trading_status__TradingStatus"></span><span class="target" id="structquinclas_1_1common_1_1_market_status_1a56e10ff2aa414280e12f6d7f1e21d924"></span><a class="reference internal" href="enums.html#_CPPv2N8quinclas6common13TradingStatusE" title="quinclas::common::TradingStatus">TradingStatus</a> <code class="descname">trading_status</code><a class="headerlink" href="#_CPPv2N8quinclas6common12MarketStatus14trading_statusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Market status. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common14CreateOrderAckE">
+<span id="quinclas::common::CreateOrderAck"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_ack"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">CreateOrderAck</code><a class="headerlink" href="#_CPPv2N8quinclas6common14CreateOrderAckE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Response to create order </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common14CreateOrderAck6opaqueE">
+<span id="quinclas::common::CreateOrderAck::opaque__i"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_ack_1a028c003d598e9fbdfabd1bfec7f4f2fc"></span>int <code class="descname">opaque</code><a class="headerlink" href="#_CPPv2N8quinclas6common14CreateOrderAck6opaqueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>User provided opaque value. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common14CreateOrderAck8order_idE">
+<span id="quinclas::common::CreateOrderAck::order_id__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_ack_1ae465079aa73aea00c1b4dc7e1063b3fa"></span><em class="property">const</em> char *<code class="descname">order_id</code><a class="headerlink" href="#_CPPv2N8quinclas6common14CreateOrderAck8order_idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order identifier. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common14ModifyOrderAckE">
+<span id="quinclas::common::ModifyOrderAck"></span><span class="target" id="structquinclas_1_1common_1_1_modify_order_ack"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">ModifyOrderAck</code><a class="headerlink" href="#_CPPv2N8quinclas6common14ModifyOrderAckE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Response to modify order </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common14ModifyOrderAck6opaqueE">
+<span id="quinclas::common::ModifyOrderAck::opaque__i"></span><span class="target" id="structquinclas_1_1common_1_1_modify_order_ack_1a3329811ff5677f2cee62a1b919aaf0b9"></span>int <code class="descname">opaque</code><a class="headerlink" href="#_CPPv2N8quinclas6common14ModifyOrderAck6opaqueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>User provided opaque value. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common14ModifyOrderAck8order_idE">
+<span id="quinclas::common::ModifyOrderAck::order_id__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_modify_order_ack_1a52a80436aed8e079eb37f7dd360da4a4"></span><em class="property">const</em> char *<code class="descname">order_id</code><a class="headerlink" href="#_CPPv2N8quinclas6common14ModifyOrderAck8order_idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order identifier. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common14CancelOrderAckE">
+<span id="quinclas::common::CancelOrderAck"></span><span class="target" id="structquinclas_1_1common_1_1_cancel_order_ack"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">CancelOrderAck</code><a class="headerlink" href="#_CPPv2N8quinclas6common14CancelOrderAckE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Response to cancel order </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common14CancelOrderAck6opaqueE">
+<span id="quinclas::common::CancelOrderAck::opaque__i"></span><span class="target" id="structquinclas_1_1common_1_1_cancel_order_ack_1a9f678a359c9de2fb93f5201b5098ca3d"></span>int <code class="descname">opaque</code><a class="headerlink" href="#_CPPv2N8quinclas6common14CancelOrderAck6opaqueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>User provided opaque value. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common14CancelOrderAck8order_idE">
+<span id="quinclas::common::CancelOrderAck::order_id__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_cancel_order_ack_1a3c8d9b1014c251fad07d3b05153de46d"></span><em class="property">const</em> char *<code class="descname">order_id</code><a class="headerlink" href="#_CPPv2N8quinclas6common14CancelOrderAck8order_idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order identifier. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common11OrderUpdateE">
+<span id="quinclas::common::OrderUpdate"></span><span class="target" id="structquinclas_1_1common_1_1_order_update"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">OrderUpdate</code><a class="headerlink" href="#_CPPv2N8quinclas6common11OrderUpdateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order update. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11OrderUpdate8exchangeE">
+<span id="quinclas::common::OrderUpdate::exchange__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_1ab276e97e0f353d7c3b39fd4ddcf14e39"></span><em class="property">const</em> char *<code class="descname">exchange</code><a class="headerlink" href="#_CPPv2N8quinclas6common11OrderUpdate8exchangeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Exchange name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11OrderUpdate10instrumentE">
+<span id="quinclas::common::OrderUpdate::instrument__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_1a55a43d8b24e220b8e5d2b141c7bb6fea"></span><em class="property">const</em> char *<code class="descname">instrument</code><a class="headerlink" href="#_CPPv2N8quinclas6common11OrderUpdate10instrumentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Instrument name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11OrderUpdate8order_idE">
+<span id="quinclas::common::OrderUpdate::order_id__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_1a911b7322c8730104f35603a56650c0f1"></span><em class="property">const</em> char *<code class="descname">order_id</code><a class="headerlink" href="#_CPPv2N8quinclas6common11OrderUpdate8order_idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order identifier. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11OrderUpdate6statusE">
+<span id="quinclas::common::OrderUpdate::status__OrderStatus"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_1ac921a76400b296b1d96117f49bd28872"></span><a class="reference internal" href="enums.html#_CPPv2N8quinclas6common11OrderStatusE" title="quinclas::common::OrderStatus">OrderStatus</a> <code class="descname">status</code><a class="headerlink" href="#_CPPv2N8quinclas6common11OrderUpdate6statusE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order status. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11OrderUpdate15trade_directionE">
+<span id="quinclas::common::OrderUpdate::trade_direction__TradeDirection"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_1a301b3d53fe3700c62ebe018edbe92e77"></span>TradeDirection <code class="descname">trade_direction</code><a class="headerlink" href="#_CPPv2N8quinclas6common11OrderUpdate15trade_directionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Trade direction. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11OrderUpdate18remaining_quantityE">
+<span id="quinclas::common::OrderUpdate::remaining_quantity__double"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_1a5c22259bbd127e1076bd94b7f72f1148"></span>double <code class="descname">remaining_quantity</code><a class="headerlink" href="#_CPPv2N8quinclas6common11OrderUpdate18remaining_quantityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Remaining (unfilled) quantity. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11OrderUpdate15traded_quantityE">
+<span id="quinclas::common::OrderUpdate::traded_quantity__double"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_1a312d75ac0d5c7dab0ad2c16ea767de39"></span>double <code class="descname">traded_quantity</code><a class="headerlink" href="#_CPPv2N8quinclas6common11OrderUpdate15traded_quantityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Traded (filled) quantity. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11OrderUpdate11insert_timeE">
+<span id="quinclas::common::OrderUpdate::insert_time__datetime_t"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_1a36c8ef2557371ad75775c7a0e2565ef9"></span><a class="reference internal" href="typedefs.html#_CPPv2N8quinclas6common10datetime_tE" title="quinclas::common::datetime_t">datetime_t</a> <code class="descname">insert_time</code><a class="headerlink" href="#_CPPv2N8quinclas6common11OrderUpdate11insert_timeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order insertion time. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11OrderUpdate11cancel_timeE">
+<span id="quinclas::common::OrderUpdate::cancel_time__datetime_t"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_1af73d6f6379870ab6890ea439ec857d96"></span><a class="reference internal" href="typedefs.html#_CPPv2N8quinclas6common10datetime_tE" title="quinclas::common::datetime_t">datetime_t</a> <code class="descname">cancel_time</code><a class="headerlink" href="#_CPPv2N8quinclas6common11OrderUpdate11cancel_timeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order cancellation time. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11OrderUpdate14order_templateE">
+<span id="quinclas::common::OrderUpdate::order_template__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_1a5b79ecc2579dd939d16e6bbf257f97e5"></span><em class="property">const</em> char *<code class="descname">order_template</code><a class="headerlink" href="#_CPPv2N8quinclas6common11OrderUpdate14order_templateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order template. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11OrderUpdate6opaqueE">
+<span id="quinclas::common::OrderUpdate::opaque__i"></span><span class="target" id="structquinclas_1_1common_1_1_order_update_1a6c7912855c8f02d4f467072800522c6c"></span>int <code class="descname">opaque</code><a class="headerlink" href="#_CPPv2N8quinclas6common11OrderUpdate6opaqueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>User provided opaque value. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common11TradeUpdateE">
+<span id="quinclas::common::TradeUpdate"></span><span class="target" id="structquinclas_1_1common_1_1_trade_update"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">TradeUpdate</code><a class="headerlink" href="#_CPPv2N8quinclas6common11TradeUpdateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Trade. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11TradeUpdate8exchangeE">
+<span id="quinclas::common::TradeUpdate::exchange__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_trade_update_1a53c73bed67c0505ad0dec90a730bb16b"></span><em class="property">const</em> char *<code class="descname">exchange</code><a class="headerlink" href="#_CPPv2N8quinclas6common11TradeUpdate8exchangeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Exchange name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11TradeUpdate10instrumentE">
+<span id="quinclas::common::TradeUpdate::instrument__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_trade_update_1ae43896f9541ea66af954750ff4334917"></span><em class="property">const</em> char *<code class="descname">instrument</code><a class="headerlink" href="#_CPPv2N8quinclas6common11TradeUpdate10instrumentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Instrument name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11TradeUpdate8order_idE">
+<span id="quinclas::common::TradeUpdate::order_id__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_trade_update_1a5a88ff6f554c19243059abf61f523bc9"></span><em class="property">const</em> char *<code class="descname">order_id</code><a class="headerlink" href="#_CPPv2N8quinclas6common11TradeUpdate8order_idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order identifier. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11TradeUpdate8trade_idE">
+<span id="quinclas::common::TradeUpdate::trade_id__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_trade_update_1ac117ff07995bd5dec84dc86a940d1c20"></span><em class="property">const</em> char *<code class="descname">trade_id</code><a class="headerlink" href="#_CPPv2N8quinclas6common11TradeUpdate8trade_idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Trade identifier. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11TradeUpdate15trade_directionE">
+<span id="quinclas::common::TradeUpdate::trade_direction__TradeDirection"></span><span class="target" id="structquinclas_1_1common_1_1_trade_update_1a327ea56a3bd5a0a6a0825fb9e84db53f"></span>TradeDirection <code class="descname">trade_direction</code><a class="headerlink" href="#_CPPv2N8quinclas6common11TradeUpdate15trade_directionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Trade direction. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11TradeUpdate8quantityE">
+<span id="quinclas::common::TradeUpdate::quantity__double"></span><span class="target" id="structquinclas_1_1common_1_1_trade_update_1a91b48bc4e503605d25df167e3df09eb3"></span>double <code class="descname">quantity</code><a class="headerlink" href="#_CPPv2N8quinclas6common11TradeUpdate8quantityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Trade quantity. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11TradeUpdate5priceE">
+<span id="quinclas::common::TradeUpdate::price__double"></span><span class="target" id="structquinclas_1_1common_1_1_trade_update_1abccf419351a52834be50a7fa1db49b5c"></span>double <code class="descname">price</code><a class="headerlink" href="#_CPPv2N8quinclas6common11TradeUpdate5priceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Trade price. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11TradeUpdate6opaqueE">
+<span id="quinclas::common::TradeUpdate::opaque__i"></span><span class="target" id="structquinclas_1_1common_1_1_trade_update_1adfd56f014232f2672436bb027b762082"></span>int <code class="descname">opaque</code><a class="headerlink" href="#_CPPv2N8quinclas6common11TradeUpdate6opaqueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>User provided opaque value. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common11CreateOrderE">
+<span id="quinclas::common::CreateOrder"></span><span class="target" id="structquinclas_1_1common_1_1_create_order"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">CreateOrder</code><a class="headerlink" href="#_CPPv2N8quinclas6common11CreateOrderE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create order. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11CreateOrder8exchangeE">
+<span id="quinclas::common::CreateOrder::exchange__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_1aed0d1489a9c90df8dfba6464b5c0d167"></span><em class="property">const</em> char *<code class="descname">exchange</code><a class="headerlink" href="#_CPPv2N8quinclas6common11CreateOrder8exchangeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Exchange name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11CreateOrder19order_template_nameE">
+<span id="quinclas::common::CreateOrder::order_template_name__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_1affbed8f36b46e56d12f7c88a376feb19"></span><em class="property">const</em> char *<code class="descname">order_template_name</code><a class="headerlink" href="#_CPPv2N8quinclas6common11CreateOrder19order_template_nameE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order template name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11CreateOrder10instrumentE">
+<span id="quinclas::common::CreateOrder::instrument__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_1af6463755db2f500bd341003fd94d697e"></span><em class="property">const</em> char *<code class="descname">instrument</code><a class="headerlink" href="#_CPPv2N8quinclas6common11CreateOrder10instrumentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Instrument name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11CreateOrder9directionE">
+<span id="quinclas::common::CreateOrder::direction__TradeDirectionC"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_1af4c2bbfe89461f2bdce49dbf91fe96fe"></span><em class="property">const</em> TradeDirection <code class="descname">direction</code><a class="headerlink" href="#_CPPv2N8quinclas6common11CreateOrder9directionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Trade direction. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11CreateOrder8quantityE">
+<span id="quinclas::common::CreateOrder::quantity__doubleC"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_1a5fa8a32997af9707187d49269e7ee22d"></span><em class="property">const</em> double <code class="descname">quantity</code><a class="headerlink" href="#_CPPv2N8quinclas6common11CreateOrder8quantityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Desired quantity. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11CreateOrder11limit_priceE">
+<span id="quinclas::common::CreateOrder::limit_price__doubleC"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_1a02661ce0e9b3f063487850c378117390"></span><em class="property">const</em> double <code class="descname">limit_price</code><a class="headerlink" href="#_CPPv2N8quinclas6common11CreateOrder11limit_priceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Limit price. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11CreateOrder10stop_priceE">
+<span id="quinclas::common::CreateOrder::stop_price__doubleC"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_1a466328006aac21a5006f06bcc3514ad7"></span><em class="property">const</em> double <code class="descname">stop_price</code><a class="headerlink" href="#_CPPv2N8quinclas6common11CreateOrder10stop_priceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Stop price. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11CreateOrder6opaqueE">
+<span id="quinclas::common::CreateOrder::opaque__iC"></span><span class="target" id="structquinclas_1_1common_1_1_create_order_1ab8e05c824e874e84890094e3c45b8e18"></span><em class="property">const</em> int <code class="descname">opaque</code><a class="headerlink" href="#_CPPv2N8quinclas6common11CreateOrder6opaqueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Opaque pass-through value. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common11ModifyOrderE">
+<span id="quinclas::common::ModifyOrder"></span><span class="target" id="structquinclas_1_1common_1_1_modify_order"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">ModifyOrder</code><a class="headerlink" href="#_CPPv2N8quinclas6common11ModifyOrderE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Modify order. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11ModifyOrder8order_idE">
+<span id="quinclas::common::ModifyOrder::order_id__iC"></span><span class="target" id="structquinclas_1_1common_1_1_modify_order_1a45a1f09cfc70110107c160c085ec7e25"></span><em class="property">const</em> int <code class="descname">order_id</code><a class="headerlink" href="#_CPPv2N8quinclas6common11ModifyOrder8order_idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order id. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11ModifyOrder6opaqueE">
+<span id="quinclas::common::ModifyOrder::opaque__iC"></span><span class="target" id="structquinclas_1_1common_1_1_modify_order_1a9edd45013e35c071b6632c5ac19b77d5"></span><em class="property">const</em> int <code class="descname">opaque</code><a class="headerlink" href="#_CPPv2N8quinclas6common11ModifyOrder6opaqueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Opaque pass-through value. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common11CancelOrderE">
+<span id="quinclas::common::CancelOrder"></span><span class="target" id="structquinclas_1_1common_1_1_cancel_order"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">CancelOrder</code><a class="headerlink" href="#_CPPv2N8quinclas6common11CancelOrderE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Cancel order. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11CancelOrder8order_idE">
+<span id="quinclas::common::CancelOrder::order_id__iC"></span><span class="target" id="structquinclas_1_1common_1_1_cancel_order_1ac29b5c6231bc8183dc781f666f5bfcb8"></span><em class="property">const</em> int <code class="descname">order_id</code><a class="headerlink" href="#_CPPv2N8quinclas6common11CancelOrder8order_idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order id. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11CancelOrder6opaqueE">
+<span id="quinclas::common::CancelOrder::opaque__iC"></span><span class="target" id="structquinclas_1_1common_1_1_cancel_order_1abdc6ac522d414746fc4c2bb00dec4c69"></span><em class="property">const</em> int <code class="descname">opaque</code><a class="headerlink" href="#_CPPv2N8quinclas6common11CancelOrder6opaqueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Opaque pass-through value. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common11MessageInfoE">
+<span id="quinclas::common::MessageInfo"></span><span class="target" id="structquinclas_1_1common_1_1_message_info"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">MessageInfo</code><a class="headerlink" href="#_CPPv2N8quinclas6common11MessageInfoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#structquinclas_1_1common_1_1_message_info"><span class="std std-ref">MessageInfo</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11MessageInfo7gatewayE">
+<span id="quinclas::common::MessageInfo::gateway__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_message_info_1a2176a5fbab334766f67814f89f2d6988"></span><em class="property">const</em> char *<code class="descname">gateway</code><a class="headerlink" href="#_CPPv2N8quinclas6common11MessageInfo7gatewayE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="gateway.html#classquinclas_1_1common_1_1_gateway"><span class="std std-ref">Gateway</span></a> name. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11MessageInfo10message_idE">
+<span id="quinclas::common::MessageInfo::message_id__uint64_t"></span><span class="target" id="structquinclas_1_1common_1_1_message_info_1a57f5de377347a9c85d22a79da0a04698"></span>uint64_t <code class="descname">message_id</code><a class="headerlink" href="#_CPPv2N8quinclas6common11MessageInfo10message_idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Message identifier. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11MessageInfo13exchange_timeE">
+<span id="quinclas::common::MessageInfo::exchange_time__datetime_t"></span><span class="target" id="structquinclas_1_1common_1_1_message_info_1a56f6e06c3c641e3249129d492b00285d"></span><a class="reference internal" href="typedefs.html#_CPPv2N8quinclas6common10datetime_tE" title="quinclas::common::datetime_t">datetime_t</a> <code class="descname">exchange_time</code><a class="headerlink" href="#_CPPv2N8quinclas6common11MessageInfo13exchange_timeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Exchange timestamp. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11MessageInfo12receive_timeE">
+<span id="quinclas::common::MessageInfo::receive_time__datetime_t"></span><span class="target" id="structquinclas_1_1common_1_1_message_info_1ad00e2aac1203be78c7111a2f6a8a58c9"></span><a class="reference internal" href="typedefs.html#_CPPv2N8quinclas6common10datetime_tE" title="quinclas::common::datetime_t">datetime_t</a> <code class="descname">receive_time</code><a class="headerlink" href="#_CPPv2N8quinclas6common11MessageInfo12receive_timeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Receive timestamp. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11MessageInfo12enqueue_timeE">
+<span id="quinclas::common::MessageInfo::enqueue_time__datetime_t"></span><span class="target" id="structquinclas_1_1common_1_1_message_info_1a9bd6cb44ddb9884747af741572fb56f5"></span><a class="reference internal" href="typedefs.html#_CPPv2N8quinclas6common10datetime_tE" title="quinclas::common::datetime_t">datetime_t</a> <code class="descname">enqueue_time</code><a class="headerlink" href="#_CPPv2N8quinclas6common11MessageInfo12enqueue_timeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enqueue timestamp. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv2N8quinclas6common11RequestInfoE">
+<span id="quinclas::common::RequestInfo"></span><span class="target" id="structquinclas_1_1common_1_1_request_info"></span><em class="property">struct </em><code class="descclassname">quinclas::common::</code><code class="descname">RequestInfo</code><a class="headerlink" href="#_CPPv2N8quinclas6common11RequestInfoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#structquinclas_1_1common_1_1_request_info"><span class="std std-ref">RequestInfo</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv2N8quinclas6common11RequestInfo11destinationE">
+<span id="quinclas::common::RequestInfo::destination__cCP"></span><span class="target" id="structquinclas_1_1common_1_1_request_info_1a32f184e8678b760b565218ccc3cc9766"></span><em class="property">const</em> char *<code class="descname">destination</code><a class="headerlink" href="#_CPPv2N8quinclas6common11RequestInfo11destinationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Destination name, typically a gateway. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="events.html" class="btn btn-neutral float-right" title="Events" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="enums.html" class="btn btn-neutral" title="Enums" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Hans Erik Thrane.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

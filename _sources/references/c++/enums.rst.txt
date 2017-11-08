@@ -1,0 +1,7 @@
+Enums
+=====
+
+.. doxygenenum:: quinclas::common::ConnectionStatus
+.. doxygenenum:: quinclas::common::LoginStatus
+.. doxygenenum:: quinclas::common::TradingStatus
+.. doxygenenum:: quinclas::common::OrderStatus

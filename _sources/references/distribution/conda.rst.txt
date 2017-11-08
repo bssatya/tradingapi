@@ -1,0 +1,40 @@
+Conda
+=====
+
+Conda packages can be downloaded from
+
+        * :literal:`http://quinclas.com/dist/conda/stable`
+        * :literal:`http://quinclas.com/dist/conda/unstable`
+
+Here is an example to get started (config file is *not* included by default);
+
+.. code-block:: bash
+
+    # download the installer
+    wget -c http://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
+
+    # install miniconda
+    bash ./Miniconda2-latest-Linux-x86_64.sh -b -p ~/miniconda2
+
+    # activate the root environment
+    source ~/miniconda2/bin/activate
+
+    # add extra channels for package sources
+    conda config --add channels conda-forge
+    conda config --add channels http://quinclas.com/dist/conda/unstable
+
+    # create your environment
+    conda create -y -n my_env_name
+
+    # activate your new environment
+    source activate my_env_name
+
+    # install quinclas tools
+    conda install -y quinclas-tools
+
+    # write logs to the console
+    export GLOG_logtostderr=1
+
+    # you should now be able to run the execution engine
+    execution-engine --config=femas.conf --strategy=xyz
+
